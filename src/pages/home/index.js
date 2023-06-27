@@ -10,8 +10,8 @@ function Home() {
   useEffect(() => {
     const getImage = async () => {
       setLoading(true);
-      // const res = await fetchWrapper.get(`${NASA_API_URL}/?api_key=${NASA_API_KEY}`);
-      // setImageData(res);
+      const res = await fetchWrapper.get(`${NASA_API_URL}/?api_key=${NASA_API_KEY}`);
+      setImageData(res);
       setLoading(false);
     };
 
